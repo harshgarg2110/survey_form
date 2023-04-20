@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border {
+            border: 3px solid rgb(213, 241, 249);
+            border-radius: 0px 14px;
+            padding: 20px 0px 25px 100px;
+
+            margin: 20px 350PX 0PX 350PX;
+
+            float: inline-start;
+
+        }
+        .state{
+            border: 2PX SOLID rgb(213, 241, 249);
+            border-radius: 0px 5px;
+            PADDING: 5PX;
+            margin-left: 40px;
+        }
+
+        .sumbit {
+            border: 2PX SOLID rgb(213, 241, 249);
+            PADDING: 9PX;
+            MARGIN: 2PX 150PX 2PX 250PX;
+            border-radius: 0px 5px;
+
+        }
+
+        .place {
+            border: 2PX SOLID rgb(213, 241, 249);
+            border-radius: 0px 5px;
+            PADDING: 5PX;
+            margin-left: 120px;
+        }
+
+        .R {
+
+            margin: 14PX;
+            padding: 3PX;
+        }
+        body{
+            background-color: rgb(50, 48, 48);
+            color:aliceblue;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           background-image:url(./image/pexels-photo8.jpg);
+            background-repeat:no-repeat ;
+            background-size:100% ;
+        }
+        .button {
+            border: 2PX SOLID rgb(213, 241, 249);
+            border-radius: 0px 5px;
+            PADDING: 5PX;
+            margin-left: 9px;
+        }
+        span{
+            text-align: center;
+        }
+        .form{
+            text-align:center;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+
+<span><h1>ABES ENGINEERING COLLEGE</h1></span>
+    
+    <div class="border">
+       
+            
+        <form>
+          <legend><h2 class="form">SURVEY FORM</h2></legend>
+
+
+
+            <LABEL>NAME</LABEL>
+
+
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <div CLASS="R">
+
+
+                                <label
+                                       for="fname"><strong>FIRST_NAME</strong></label>
+                                <input required
+                                       type="text"
+                                       name="FIRST_NAME"
+                                       id="fname"
+                                       class="button"
+                                       placeholder="YOUR FIRST NAME">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="R">
+
+                                <label
+                                       for="lname"><strong>LAST_NAME</strong></label>
+                                <input required
+                                       type="text"
+                                       name="LAST_NAME"
+                                       id="lname"
+                                       class="button"
+                                       placeholder="YOUR LAST NAME">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <BR>
+
+            <LABEL>ADREESS</LABEL>
+            <div>
+                <table>
+                    <tr class="">
+                        <td>
+                            <div class="R">
+                                <Label
+                                       for="saddress"><strong>STREET_ADREESS</strong></Label>
+
+                                <textarea required
+                                          name="STREET_ADREESS"
+                                          id="saddres"
+                                          class="button"
+                                          cols="15"
+                                          rows="1"
+                                          placeholder="ENTER YOUR ADDRESS"></textarea>
+                            </div>
+                        </td>
+                        <td>
+                            <DIV class="R">
+                                <label
+                                       for="sname"><strong>STATE</strong></label>
+                                <input required
+                                       type="text"
+                                       name="STATE"
+                                       id="sname"
+                                       class="state"
+                                       placeholder="ENTER YOUR STATE">
+                            </DIV>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <DIV class="R">
+                                <label
+                                       for="place"><strong>CITY</strong></label>
+                                <select name="MY CITY"
+                                        id="PLACE"
+                                        class="place">
+                                    <option
+                                            VALUE="MY_CITY">
+                                        HAPUR
+                                    </option>
+                                    <option
+                                            value="MY_CITY">
+                                        VARANASI
+                                    </option>
+                                    <option
+                                            value="MY_CITY">
+                                        GHAZIABAD
+                                    </option>
+                                    <option
+                                            value="MY_CITY">
+                                        JHANSI
+                                    </option>
+                                </select>
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="R">
+                                <label
+                                       for="PIN"><strong>PIN CODE</strong></label>
+                                <input required
+                                       type="NUMBER"
+                                       name="PIN_CODE"
+                                       id="PIN"
+                                       class="button"
+                                       placeholder="694844"
+                                       maxlength="10">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <label>CONTACT</label>
+            <div class="R">
+                <label for="phone"><strong>PHONE
+                        NUMBER</strong></label>
+                <input required type="number"
+                       name="CONTACT_NUMBER"
+                       id="phone" class="button"
+                       placeholder="+91 9868645365">
+            </div>
+            <BR>
+
+            <LABEL>RATING</LABEL>
+            <div>
+                <DIV class="R">
+                    <label for="C"><strong>QUALITY
+                            OF
+                            PRODUCTS
+                            RECIEVED</strong></label>
+                    Excelent
+                    <input type="radio"
+                           name="QUALITY_OF_PRODUCTS_RECIEVED_RATING:Excelent"
+                           id="C">
+                    Good
+                    <input type="radio"
+                           name="QUALITY_OF_PRODUCTS_RECIEVED_RATING:Good"
+                           id="C">
+                    Bad
+                    <input type="radio"
+                           name="QUALITY_OF_PRODUCTS_RECIEVED_RATING:Bad"
+                           id="C">
+                </div>
+
+                <div class="R">
+                    <label for="C"><strong>VALUE
+                            FOR
+                            MONEY</strong></label>
+                    Excelent
+                    <input type="radio"
+                           name="VALUE_FOR_MONEY_RATING:Excelent"
+                           id="C">
+                    Good
+                    <input type="radio"
+                           name="VALUE_FOR_MONEY_RATING:Good"
+                           id="C">
+                    Bad
+                    <input type="radio"
+                           name="VALUE_FOR_MONEY_RATING:Bad"
+                           id="C">
+                </div>
+
+                <div class="R">
+                    <label
+                           for="C"><strong>DELIVERY</strong></label>
+                    Excelent
+                    <input type="radio"
+                           name="DELIVERY_RATING:Excelent"
+                           id="C">
+                    Good
+                    <input type="radio"
+                           name="DELIVERY_RATING:Good"
+                           id="C">
+                    Bad
+                    <input type="radio"
+                           name="DELIVERY_RATING:Bad"
+                           id="C">
+                </div>
+            </DIV>
+            <BR>
+
+            <DIV>
+
+                <input class="sumbit"
+                       type="submit" name="sumbil"
+                       id="">
+
+            </DIV>
+
+        </form></fieldset>
+    </div>
+</body>
+
+</html>
